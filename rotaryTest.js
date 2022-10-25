@@ -1,9 +1,9 @@
 const childProcess = require('node:child_process');
 var GPIO = require('onoff').Gpio;
 
+var phoneHook = new GPIO(17, 'in', 'both', { debounceTimeout: 10 });
 var rotaryDial = new GPIO(27, 'in', 'rising', { debounceTimeout: 10 });
 var rotarySwitch = new GPIO(22, 'in', 'both', { debounceTimeout: 10 });
-var phoneHook = new GPIO(17, 'in', 'both', { debounceTimeout: 10 });
 
 var rotaryCounter = 0;
 

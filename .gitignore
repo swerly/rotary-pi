@@ -1,5 +1,7 @@
 # Custom
 *.wav
+*.flac
+recordings/*
 
 # Logs
 logs
